@@ -11,7 +11,7 @@ public class Squared {
 		long n = sc.nextLong();
 		long answer = 0;
 		
-		for(int i = 0; i < n; i++) {
+		for(int i = 1; i <= n; i++) {
 			
 			if(i*i==n) {
 				answer = (i+1)*(i+1);

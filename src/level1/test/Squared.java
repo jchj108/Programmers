@@ -4,25 +4,16 @@ import java.util.Scanner;
 
 public class Squared {
 
-	public static void main(String[] args) {
+	public long solution(long n) {
+		long root = (long) Math.sqrt(n);
 
-		Scanner sc = new Scanner(System.in);
-		
-		long n = sc.nextLong();
-		long answer = 0;
-		
-		for(int i = 1; i <= n; i++) {
-			
-			if(i*i==n) {
-				answer = (i+1)*(i+1);
-				break;
-			} else {
-				answer = -1;
-			}
+		if (n == Math.pow(root, 2)) {
+			return (long) Math.pow(root + 1, 2);
 		}
-		System.out.println(answer);
-		
-		
+
+		return -1;
 	}
 
+	public static void main(String[] args) {
+	}
 }
